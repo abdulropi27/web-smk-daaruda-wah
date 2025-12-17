@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenaga Pendidik - SMK DAARUDDA'WAH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{padding-top:70px}
+        .tp-media{position:relative;width:100%;height:250px;background:#ff3b30}
+        .tp-item { flex: 0 0 calc(25% - 1rem); }
+        .tp-media { height: 250px; background: #ff3b30; display:flex; align-items:center; justify-content:center; border-radius:8px; overflow:hidden; }
+        .tp-img { height: 100%; width: auto; object-fit: contain; }
+        /* Ensure images are fully visible (no head cropping) while background stays fixed */
+        .tp-media img, .tp-card img, .featured-img, .card-img-top {
+            max-height:100%;
+            width:auto;
+            height:auto;
+            object-fit:contain;
+            object-position:top center;
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .tp-badge { position:absolute; top:10px; left:10px; width:14px; height:14px; background:#ff3b30; border-radius:50%; z-index:3; box-shadow:none; }
+        .tp-card{box-shadow:none;border:none;background:transparent}
+        .tp-card img{width:100%;height:250px;object-fit:contain;object-position:top center;display:block;background:transparent;position:relative;z-index:2}
+        .tp-card .card-body{min-height:80px;background:transparent;border:none}
+        .featured-wrapper { max-width: calc(25% - 1rem); margin: 0 auto; }
+        .featured-img{width:100%;height:250px;object-fit:contain;display:block;border-radius:8px}
+        .featured-wrapper { flex: 0 0 calc(25% - 1rem); margin: 0 auto; }
+        .featured-img { height: 250px; width: 100%; object-fit: contain; }
+        @media (max-width: 992px){ .featured-wrapper { max-width: calc(33.333% - 1rem); } }
+        @media (max-width: 768px){ .featured-wrapper { max-width: calc(50% - 1rem); } .featured-img{height:220px} }
+        @media (max-width: 480px){ .featured-wrapper { max-width: 100%; } }
+        .brand-bg{background:var(--brand-blue);}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark fixed-top" style="background-color:#0e5faa;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png.png" width="36" height="36" class="d-inline-block align-text-top me-2" alt="Logo">
+                SMK DAARUDDA'WAH
+            </a>
+            <a class="btn btn-outline-light" href="index.html#tenaga-pendidik">Kembali</a>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-4">
+            <h1 class="fw-bold">Tenaga Pendidik</h1>
+            <div style="width:90px;height:2px;background:#0e5faa;margin:0.5rem auto 1rem"></div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+                <div class="card tp-card">
+                    <div class="tp-media" style="--bg:url('https://via.placeholder.com/600x400?text=Guru+1')">
+                        <span class="tp-badge" aria-hidden="true"></span>
+                        <img src="img/4.JPG" class="card-img-top" alt="Guru 1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card tp-card">
+                    <div class="tp-media" style="--bg:url('https://via.placeholder.com/600x400?text=Guru+2')">
+                        <span class="tp-badge" aria-hidden="true"></span>
+                        <img src="img/1.JPG" class="card-img-top" alt="Guru 2">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card tp-card">
+                    <div class="tp-media" style="--bg:url('https://via.placeholder.com/600x400?text=Guru+3')">
+                        <span class="tp-badge" aria-hidden="true"></span>
+                        <img src="img/5.JPG" class="card-img-top" alt="Guru 3">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card tp-card">
+                    <div class="tp-media" style="--bg:url('https://via.placeholder.com/600x400?text=Guru+4')">
+                        <span class="tp-badge" aria-hidden="true"></span>
+                        <img src="img/10.JPG" class="card-img-top" alt="Guru 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured teacher (centered, same width as one grid column) -->
+        <div class="featured-teacher text-center mt-4 mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <div class="tp-media">
+                        <span class="tp-badge" aria-hidden="true"></span>
+                        <img src="img/6.JPG" alt="Guru Terpilih" class="card-img-top rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-3 mt-4" style="background:#0e5faa; color:#fff;">
+        <div class="container"><small>&copy; <span id="year"></span> SMK DAARUDDA'WAH</small></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script> (function(){var el=document.getElementById('year'); if(el) el.textContent=new Date().getFullYear();})(); </script>
+</body>
+</html>
