@@ -135,7 +135,8 @@
     <nav class="navbar navbar-dark fixed-top navbar-expand-lg" style="background-color: #0e5faa;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png.png" alt="Logo SMK" width="40" height="40" class="d-inline-block align-text-top me-2">
+                <!-- Logo: tetap coba logo.png.png dulu, kalau gagal fallback ke logo.png -->
+                <img src="img/logo.png.png" onerror="this.onerror=null;this.src='img/logo.png';" alt="Logo SMK" width="40" height="40" class="d-inline-block align-text-top me-2">
                 SMK DAARUDDA'WAH
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -197,15 +198,15 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 56px;">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="img/poto smk.png" class="d-block w-100"
+                <img src="img/poto%20smk.png" class="d-block w-100" loading="lazy"
                     alt="Gambar Sekolah 1" style="height: 400px; object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="img/poto smk 2.png" class="d-block w-100"
+                <img src="img/poto%20smk%202.png" class="d-block w-100" loading="lazy"
                     alt="Gambar Sekolah 2" style="height: 400px; object-fit: cover;">
             </div>
             <div class="carousel-item">
-                <img src="img/poto smk 3.png" class="d-block w-100"
+                <img src="img/poto%20smk%203.png" class="d-block w-100" loading="lazy"
                     alt="Gambar Sekolah 3" style="height: 400px; object-fit: cover;">
             </div>
         </div>
@@ -232,7 +233,7 @@
                 <div class="ratio ratio-16x9 mt-3">
                     <!-- Video lokal dari galeri. Ganti path di <source> dengan lokasi video Anda (mis. img/profile.mp4) -->
                     <video controls playsinline class="w-100 h-100" style="object-fit: cover;">
-                        <source src="video/Profil SMK Daarudda'wah.mp4" type="video/mp4">
+                        <source src="video/Profil%20SMK%20Daarudda%27wah.mp4" type="video/mp4">
                         Browser Anda tidak mendukung elemen video.
                     </video>
                 </div>
@@ -280,8 +281,8 @@
 
         <div class="row align-items-center">
             <div class="col-md-6 mb-4 mb-md-0 text-center">
-                <img src="img/kepala sekolah.png"
-                    class="kepala-img" alt="Foto Kepala Sekolah">
+                <img src="img/kepala%20sekolah.png"
+                    class="kepala-img" alt="Foto Kepala Sekolah" loading="lazy">
             </div>
 
             <div class="col-md-6 d-flex flex-column justify-content-center">
@@ -310,13 +311,13 @@
             <!-- Prestasi Item 1 -->
             <div class="prestasi-item">
                 <div class="prestasi-image">
-                    <img src="img/Juara otomotif.JPG" alt="Prestasi 1">
+                    <img src="img/Juara%20otomotif.JPG" alt="Prestasi 1" loading="lazy">
                 </div>
                 <div class="prestasi-content">
                             <h4 class="fw-bold text-white">JUARA 2 LOMBA MERAKIT SEPEDA MOTOR</h4>
                     <p class="small mb-2">Publish : 28 SEPTEMBER 2025</p>
                     <p>
-                        Assalamu'alaikum Warahmatullahi Wabarakatuh. SMK Daarudda’wah berhasil meraih Juara Lomba Otomotif, yang merupakan hasil dari kemampuan teknis, ketelitian, dan kerja keras siswa dalam bidang otomotif. Prestasi ini menunjukkan kompetensi siswa dalam penguasaan keterampilan praktik, pemecahan masalah, serta penerapan standar keselamatan kerja. Keberhasilan tersebut menjadi bukti komitmen sekolah dalam menghasilkan lulusan yang kompeten, profesional, dan siap bersaing di dunia industri.
+                        Assalamu'alaikum Warahmatullahi Wabarakatuh. SMK Daarudda’wah berhasil meraih Juara Lomba Otomotif, yang merupakan hasil dari kemampuan teknis, ketelitian, dan kerja keras si[...]
                     </p>
                     <div>
                         <a href="prestasi-1.html" class="btn-white-outline">Baca selengkapnya</a>
@@ -327,13 +328,13 @@
             <!-- Prestasi Item 2 -->
             <div class="prestasi-item">
                 <div class="prestasi-image">
-                    <img src="img/juara putsal.jpeg" alt="Prestasi 2">
+                    <img src="img/juara%20putsal.jpeg" alt="Prestasi 2" loading="lazy">
                 </div>
                 <div class="prestasi-content">
                     <h4 class="fw-bold text-white">JUARA 2 lOMBA PUTSAL</h4>
                     <p class="small mb-2">Publish : 18 OKTOBER 2025</p>
                     <p>
-                        SMK Daarudda’wah berhasil meraih Juara Lomba Futsal, sebagai hasil dari kerja sama tim, disiplin, dan semangat sportivitas para siswa. Prestasi ini menunjukkan kemampuan siswa dalam bidang olahraga, khususnya futsal, serta mencerminkan komitmen sekolah dalam mendukung pengembangan potensi siswa baik di bidang akademik maupun nonakademik. Keberhasilan tersebut diharapkan dapat menjadi motivasi bagi siswa lain untuk terus berprestasi dan mengharumkan nama sekolah.
+                        SMK Daarudda’wah berhasil meraih Juara Lomba Futsal, sebagai hasil dari kerja sama tim, disiplin, dan semangat sportivitas para siswa. Prestasi ini menunjukkan kemampuan sisw[...]
                     </p>
                     <div>
                         <a href="prestasi-2.html" class="btn-white-outline">Baca selengkapnya</a>
@@ -356,22 +357,22 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
                 <div class="col">
                     <div class="bg-placeholder shadow-sm overflow-hidden" style="height: 250px;">
-                        <img src="img/eskul pramuka.jpeg" alt="" class="img-cover">
+                        <img src="img/eskul%20pramuka.jpeg" alt="Pramuka" class="img-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-placeholder shadow-sm overflow-hidden" style="height: 250px;">
-                        <img src="img/images (2).jpeg" alt="" class="img-cover">
+                        <img src="img/images%20(2).jpeg" alt="Eskul" class="img-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-placeholder shadow-sm overflow-hidden" style="height: 250px;">
-                        <img src="img/putsal.jpeg" alt="" class="img-cover">
+                        <img src="img/putsal.jpeg" alt="Putsal" class="img-cover" loading="lazy">
                     </div>
                 </div>
                 <div class="col">
                     <div class="bg-placeholder shadow-sm overflow-hidden" style="height: 250px;">
-                        <img src="img/juara hadroh.jpeg" alt="" class="img-cover">
+                        <img src="img/juara%20hadroh.jpeg" alt="Hadroh" class="img-cover" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -411,30 +412,27 @@
 
                 <div class="tp-list" aria-label="Daftar Tenaga Pendidik">
                     <div class="tp-item" role="article">
-                            <div class="tp-media" style="--bg:url('img/tenaga pendidik 2.png')">
+                            <div class="tp-media" style="--bg:url('img/tenaga%20pendidik%202.png')">
                                 <span class="tp-badge" aria-hidden="true"></span>
-                                <img src="img/tenaga pendidik 2.png" alt="Guru 1" class="tp-img">
+                                <img src="img/tenaga%20pendidik%202.png" alt="Guru 1" class="tp-img" loading="lazy">
                             </div>
                     </div>
                     <div class="tp-item" role="article">
-                        <div class="tp-media" style="--bg:url('img/tenaga pendidik 1.png')">
+                        <div class="tp-media" style="--bg:url('img/tenaga%20pendidik%201.png')">
                             <span class="tp-badge" aria-hidden="true"></span>
-                            <img src="img/tenaga pendidik 1.png" alt="Guru 2" class="tp-img">
+                            <img src="img/tenaga%20pendidik%201.png" alt="Guru 2" class="tp-img" loading="lazy">
                         </div>
                     </div>
                     <div class="tp-item" role="article">
-                        <div class="tp-media" style="--bg:url('img/tenaga pendidik 3.png')">
+                        <div class="tp-media" style="--bg:url('img/tenaga%20pendidik%203.png')">
                             <span class="tp-badge" aria-hidden="true"></span>
-                            <img src="img/tenaga pendidik 3.png" alt="Guru 3" class="tp-img">
+                            <img src="img/tenaga%20pendidik%203.png" alt="Guru 3" class="tp-img" loading="lazy">
                         </div>
                     </div>
                     <div class="tp-item" role="article">
-                        <div class="tp-media" style="--bg:url('img/tenaga pendidik 4.png')">
-                            <span class="tp-badge" aria-hidd
-                            
-                            
-                            en="true"></span>
-                            <img src="img/tenaga pendidik 4.png" alt="Guru 4" class="tp-img">
+                        <div class="tp-media" style="--bg:url('img/tenaga%20pendidik%204.png')">
+                            <span class="tp-badge" aria-hidden="true"></span>
+                            <img src="img/tenaga%20pendidik%204.png" alt="Guru 4" class="tp-img" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -455,7 +453,7 @@
         <div class="row align-items-start mb-5">
             <div class="col-md-5">
                 <div class="ratio ratio-4x3 rounded-2 shadow-sm bg-placeholder" style="min-height: 250px;">
-                    <img src="img/hadroh angkat piala.jpeg" alt="" srcset="">
+                    <img src="img/hadroh%20angkat%20piala.jpeg" alt="Hadroh" class="" loading="lazy">
                 </div>
             </div>
 
@@ -464,7 +462,7 @@
                 <p class="small mb-2 text-dark">Publish : 25 November 2025</p>
                 <p class="mb-4 text-dark" style="font-size: 0.9rem;">
                     Assalamu'alaikum Warahmatullahi Wabarakatuh.<br>
-                    SMK Daarudda’wah kembali menorehkan prestasi yang membanggakan melalui keberhasilan tim Hadroh dalam meraih Juara Lomba Hadroh. Prestasi ini merupakan hasil dari kerja keras, latihan yang konsisten, serta kekompakan seluruh anggota tim dalam menampilkan seni hadroh yang sarat dengan nilai-nilai islami. Penampilan yang harmonis, penguasaan ritme yang baik, serta semangat kebersamaan menjadi faktor utama keberhasilan tim dalam kompetisi tersebut. Pencapaian ini tidak hanya mengharumkan nama sekolah, tetapi juga menjadi bukti komitmen SMK Daarudda’wah dalam mendukung pengembangan minat dan bakat siswa, khususnya di bidang seni dan budaya islami, sehingga mampu berprestasi baik di tingkat internal maupun eksternal sekolah.<br>
+                    SMK Daarudda’wah kembali menorehkan prestasi yang membanggakan melalui keberhasilan tim Hadroh dalam meraih Juara Lomba Hadroh. Prestasi ini merupakan hasil dari kerja keras, lat[...]
                     Wassalamu'alaikum Warahmatullahi Wabarakatuh.
                 </p>
                 <a href="berita-1.html" class="btn btn-primary rounded-pill px-4 py-2" style="background-color: var(--brand-blue) !important; border-color: var(--brand-blue) !important;">
@@ -474,7 +472,7 @@
         </div> <div class="row align-items-stretch mb-5">
             <div class="col-md-5 mb-4 mb-md-0">
                 <div class="ratio ratio-4x3 rounded-2 shadow-sm bg-placeholder" style="min-height: 250px;">
-                    <img src="img/juara cpu.JPG" alt="" srcset="">
+                    <img src="img/juara%20cpu.JPG" alt="Juara CPU" class="" loading="lazy">
                 </div>
             </div>
 
@@ -483,8 +481,8 @@
                 <p class="small mb-2 text-dark">Publish : 25 Januari 2025</p>
                 <p class="mb-4 text-dark" style="font-size: 0.9rem;">
                     Assalamu'alaikum Warahmatullahi Wabarakatuh.<br>
-                    Selamat datang di website resmi SMK Daarudd'Awah. <br>
-                    SMK Daarudda’wah berhasil meraih Juara Lomba CPU, yang merupakan hasil dari kemampuan teknis, ketelitian, dan pemahaman siswa dalam bidang teknologi komputer. Prestasi ini mencerminkan kompetensi siswa dalam perakitan, pengujian, dan pemecahan masalah perangkat keras komputer. Keberhasilan tersebut menjadi bukti komitmen sekolah dalam mengembangkan keterampilan teknologi informasi serta mempersiapkan siswa agar siap bersaing di era digital.
+                    Selamat datang di website resmi SMK Daarud'Awah. <br>
+                    SMK Daarudda’wah berhasil meraih Juara Lomba CPU, yang merupakan hasil dari kemampuan teknis, ketelitian, dan pemahaman siswa dalam bidang teknologi komputer. Prestasi ini mencer[...]
                 </p>
                 <a href="berita-2.html" class="btn btn-primary rounded-pill px-4 py-2" style="background-color: var(--brand-blue) !important; border-color: var(--brand-blue) !important;">
                     Baca selengkapnya
